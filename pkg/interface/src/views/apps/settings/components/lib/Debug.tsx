@@ -46,6 +46,8 @@ const StoreDebugger = (props: StoreDebuggerProps) => {
       <Text cursor="pointer" onClick={() => setVisible(!visible)}>{name}</Text>
       {visible && <Box>
         <BaseInput
+          position="sticky"
+          top={0}
           my={1}
           p={2}
           backgroundColor='white'
